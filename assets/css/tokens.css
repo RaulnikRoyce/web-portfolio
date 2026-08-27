@@ -1,0 +1,23 @@
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --radius: 0.5rem;
+  --background: oklch(0.17 0.004 285);
+  --foreground: oklch(1 0 0);
+  --card: oklch(0.22 0.005 285);
+  --primary: oklch(0.82 0.17 84);
+  --primary-foreground: oklch(0.17 0.004 285);
+  --secondary: oklch(0.27 0.005 285);
+  --muted: oklch(0.75 0.005 285);
+  --border: oklch(0.3 0.005 285);
+  --shadow-glow:
+    0 0 0 1px color-mix(in oklab, var(--primary) 45%, transparent),
+    0 12px 40px -12px color-mix(in oklab, var(--primary) 40%, transparent);
+  --grid-line: color-mix(in oklab, var(--primary) 8%, transparent);
+  --spot-x: 50%;
+  --spot-y: 28%;
+  --grid-shift-x: 0px;
+  --grid-shift-y: 0px;
+  --space: 1.25rem;
+  --max: 74rem;
+}

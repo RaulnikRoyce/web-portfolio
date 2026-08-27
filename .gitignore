@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.local
+.netlify
+node_modules

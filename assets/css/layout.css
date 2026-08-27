@@ -1,0 +1,145 @@
+.l-wrap {
+  width: min(100% - (var(--space) * 2), var(--max));
+  margin-inline: auto;
+}
+
+.l-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in oklab, var(--background) 80%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.l-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.l-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  padding-block: 5.5rem 7rem;
+}
+
+.l-hero__grid {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: var(--grid-shift-x) var(--grid-shift-y);
+}
+
+.l-hero__inner {
+  position: relative;
+}
+
+.l-section {
+  border-bottom: 1px solid var(--border);
+  padding-block: 4.5rem 6rem;
+}
+
+.l-section h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.l-section--tight {
+  padding-block: 3rem 4rem;
+}
+
+.l-about {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.l-about h2 {
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+}
+
+.l-pillars {
+  display: grid;
+  gap: 1rem;
+}
+
+.l-stack {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.l-projects {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.l-contact {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.l-footer {
+  padding-block: 3.5rem;
+}
+
+.l-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .l-hero {
+    padding-block: 7rem 8.5rem;
+  }
+
+  .l-pillars {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-footer__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .l-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .l-about {
+    grid-template-columns: minmax(16rem, 0.85fr) 1.15fr;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  .l-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .l-hero__grid {
+    background-position: 0 0;
+  }
+}

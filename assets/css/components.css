@@ -1,0 +1,718 @@
+.c-logo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.c-spot {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(
+    40rem circle at var(--spot-x) var(--spot-y),
+    color-mix(in oklab, var(--primary) 18%, transparent),
+    transparent 58%
+  );
+}
+
+.c-logo span {
+  color: var(--primary);
+}
+
+.c-nav {
+  display: none;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.c-nav a {
+  padding: 0.5rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  transition: color 0.15s ease;
+}
+
+.c-nav a:hover {
+  color: var(--primary);
+}
+
+.c-icon-btn {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  color: var(--muted);
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.c-icon-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.c-menu-toggle {
+  display: inline-flex;
+}
+
+.c-menu-toggle__close {
+  display: none;
+}
+
+.c-menu-toggle[aria-expanded="true"] .c-menu-toggle__open {
+  display: none;
+}
+
+.c-menu-toggle[aria-expanded="true"] .c-menu-toggle__close {
+  display: block;
+}
+
+.c-menu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+  padding-block: 0.75rem 1rem;
+}
+
+.c-menu.is-open {
+  display: flex;
+}
+
+.c-menu a {
+  padding: 0.75rem 0.5rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.c-menu a:hover {
+  color: var(--primary);
+}
+
+.c-menu__social {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.c-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.c-badge .u-icon {
+  color: var(--primary);
+}
+
+.c-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.c-hero-title {
+  max-width: 18ch;
+  margin-top: 1.25rem;
+  font-size: clamp(2.35rem, 7vw, 4.25rem);
+  line-height: 1.02;
+}
+
+.c-kicker-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.c-prose {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.c-prose + .c-prose {
+  margin-top: 0.85rem;
+}
+
+.c-portrait {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  max-width: 22rem;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--secondary);
+}
+
+.c-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-portrait.is-fallback img {
+  display: none;
+}
+
+.c-portrait__fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary);
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.c-portrait.is-fallback .c-portrait__fallback {
+  display: grid;
+}
+
+.c-pillar {
+  padding: 1.35rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+}
+
+.c-pillar h3 {
+  font-size: 1.05rem;
+}
+
+.c-pillar p {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.c-stack-group {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+}
+
+.c-stack-group h3 {
+  font-size: 0.8rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.c-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.c-chips li {
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--secondary);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.c-card__kicker {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+
+.c-path {
+  display: grid;
+  gap: 0;
+  margin-top: 2.5rem;
+}
+
+.c-path li {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.c-path li:first-child {
+  padding-top: 0;
+}
+
+.c-path li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.c-path__index {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.c-path .c-period {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.c-path h3 {
+  margin-top: 0.35rem;
+  font-size: 1.25rem;
+}
+
+.c-path p:not(.c-period) {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.c-lead {
+  max-width: 42rem;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.c-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.25rem;
+}
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.c-btn:hover {
+  transform: translateY(-2px);
+}
+
+.c-btn--primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.c-btn--primary:hover {
+  filter: brightness(1.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.c-btn--ghost {
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.c-btn--ghost:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.c-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.c-kicker .u-icon {
+  color: var(--primary);
+}
+
+.c-kicker h2 {
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+}
+
+.c-section-lead {
+  max-width: 42rem;
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.c-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.c-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(--primary) 60%, var(--border));
+  box-shadow: var(--shadow-glow);
+}
+
+.c-shot {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background: var(--secondary);
+}
+
+.c-shot__grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.c-shot__body {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.c-shot__label {
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.c-shot__name {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.c-card h3 {
+  font-size: 1.35rem;
+}
+
+.c-card__tagline {
+  margin-top: 0.5rem;
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.c-card__body {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.c-meta {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.c-meta p {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.c-meta .u-icon {
+  margin-top: 0.2rem;
+  color: var(--primary);
+}
+
+.c-meta strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.c-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.c-tags li {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--secondary);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.c-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.c-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.c-links a:hover {
+  color: var(--primary);
+}
+
+.c-timeline {
+  margin-top: 2.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--border);
+  display: grid;
+  gap: 2rem;
+}
+
+.c-timeline li {
+  position: relative;
+}
+
+.c-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: -1.72rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--primary);
+  border-radius: 999px;
+  background: var(--background);
+}
+
+.c-timeline time,
+.c-timeline .c-period {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.c-timeline h3 {
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+}
+
+.c-timeline p {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.c-skills-title {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.c-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.c-skills li {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.c-skills li:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--primary) 60%, var(--border));
+}
+
+.c-skills .u-icon {
+  color: var(--primary);
+}
+
+.c-channel {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.c-channel:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--primary) 60%, var(--border));
+}
+
+.c-channel .u-icon {
+  color: var(--primary);
+}
+
+.c-channel strong {
+  font-size: 0.875rem;
+}
+
+.c-channel span {
+  margin-top: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.c-foot-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.c-foot-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.c-foot-nav a:hover {
+  color: var(--primary);
+}
+
+.c-copy {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.c-empty {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.c-empty h1 {
+  font-size: 4.5rem;
+}
+
+.c-empty h2 {
+  margin-top: 1rem;
+}
+
+.c-empty p {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+.c-empty .c-btn {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .c-path li {
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1.25rem 1.75rem;
+    align-items: start;
+  }
+
+  .c-nav {
+    display: flex;
+  }
+
+  .c-menu-toggle {
+    display: none;
+  }
+
+  .c-card {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .c-portrait {
+    max-width: none;
+  }
+}
