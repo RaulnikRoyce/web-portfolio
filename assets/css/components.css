@@ -409,6 +409,15 @@
   background: var(--secondary);
 }
 
+.c-shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .c-shot__grid {
   position: absolute;
   inset: 0;
@@ -516,6 +525,10 @@
   gap: 0.4rem;
   font-size: 0.875rem;
   font-weight: 600;
+}
+
+.c-links a:first-child {
+  color: var(--primary);
 }
 
 .c-links a:hover {

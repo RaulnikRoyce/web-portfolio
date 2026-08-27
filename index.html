@@ -250,12 +250,13 @@
 
             <article class="c-card">
               <p class="c-card__kicker">Painel · evento independente</p>
-              <div class="c-shot" aria-hidden="true">
-                <div class="c-shot__grid"></div>
-                <div class="c-shot__body">
-                  <span class="c-shot__label">Screenshot em breve</span>
-                  <p class="c-shot__name">Beco Underground</p>
-                </div>
+              <div class="c-shot">
+                <img
+                  src="assets/img/beco-underground.png"
+                  alt="Tela de login do painel Beco Underground"
+                  width="1280"
+                  height="800"
+                />
               </div>
               <h3>Beco Underground</h3>
               <p class="c-card__tagline">Produção independente no caos. Um painel no lugar de dez planilhas.</p>
@@ -266,19 +267,23 @@
               <div class="c-meta">
                 <p>
                   <span
-                    ><strong>Arquitetura: </strong>Rota → controller → service → repository. Papéis separados entre
-                    admin e produtor.</span
+                    ><strong>Arquitetura: </strong>Rota → controller → service → repository. Admin escala o palco;
+                    produtor cria evento. Demo no ar.</span
                   >
                 </p>
               </div>
               <ul class="c-tags">
                 <li>Vue 3</li>
+                <li>Pinia</li>
                 <li>Tailwind</li>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MySQL</li>
+                <li>Zod</li>
+                <li>JWT</li>
               </ul>
               <div class="c-links">
+                <a href="https://gestaobeco.netlify.app/" target="_blank" rel="noreferrer noopener">Ver painel</a>
                 <a
                   href="https://github.com/RaulnikRoyce/frontend-beco-underground"
                   target="_blank"
@@ -287,9 +292,6 @@
                 >
                 <a href="https://github.com/RaulnikRoyce/api-beco-underground" target="_blank" rel="noreferrer noopener"
                   >API</a
-                >
-                <a href="https://api-beco-underground.onrender.com/health" target="_blank" rel="noreferrer noopener"
-                  >API no Render</a
                 >
               </div>
             </article>
