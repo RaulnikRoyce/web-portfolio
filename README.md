@@ -1,19 +1,17 @@
-# pragmatic-pixel
+# Raulnik Royce
 
-Portfólio de [Raulnik Royce](https://github.com/RaulnikRoyce): landing HTML5, CSS e JavaScript.
+Landing de apresentação profissional: HTML5, CSS e JavaScript.
+
+**Site:** [portfolio.raulnikroyce.dev](https://portfolio.raulnikroyce.dev/)
 
 ## Desenvolvimento
-
-Abra `index.html` no navegador ou sirva a pasta:
 
 ```bash
 npx --yes serve .
 ```
 
-## Deploy (Netlify)
+Ou abra `index.html` no navegador.
 
-Conecte o repositório. O `netlify.toml` publica a raiz (`publish = "."`), sem build.
+## Deploy
 
-## Conteúdo
-
-Textos e e-mail (`raulnikroyce12@gmail.com`) estão em `index.html`. Estilos em `assets/css/`. Menu mobile em `assets/js/main.js`.
+Netlify publica a raiz (`publish = "."` no `netlify.toml`), sem build. O domínio aponta para esse projeto.
