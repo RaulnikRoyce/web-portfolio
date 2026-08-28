@@ -1,8 +1,12 @@
 # Raulnik Royce
 
-Landing em HTML5, CSS e JavaScript.
+Landing pessoal. O site está em [portfolio.raulnikroyce.dev](https://portfolio.raulnikroyce.dev/).
 
-O site está em [portfolio.raulnikroyce.dev](https://portfolio.raulnikroyce.dev/).
+## Stack
+
+HTML5 · CSS · JavaScript
+
+`index.html` e `404.html` montam as páginas. `assets/css/` guarda tokens, base, layout e components. `assets/js/main.js` cuida do menu e do spotlight. `assets/js/kit.js` desenha a espiral de logos na Stack.
 
 ## Desenvolvimento
 
