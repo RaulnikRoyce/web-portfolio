@@ -1,0 +1,22 @@
+---
+description: Gate de copy. Auditar todo texto visível antes de entregar. Sempre.
+alwaysApply: true
+---
+
+# Gate de copy (obrigatório)
+
+`redator.mdc` e `auditoria-escrita.mdc` valem para **todo** texto, não só o H1. Entregar copy sem essa varredura é erro.
+
+**Antes de qualquer HTML, README, 404, meta, alt, aria-label, botão ou chat**, leia o arquivo inteiro e rode o checklist. Ache uma violação, reescreva. Só então envie.
+
+Superfícies. `index.html` (hero, cards, pilares, trajetória, contato, rodapé), `404.html`, `README.md`, `name="description"`, `og:description`, `alt`, `aria-label`.
+
+Recusar neste projeto (já furaram)
+
+- Metáfora e frase de efeito. *olho de design*, *entra na tela*, *nascem*, *nascido de*, *no caos*, *a base decide*, *cruzamento*, *privacidade entra no contrato*
+- Jargão. *ponta a ponta*, *bagagem*, *critério visual*, *AI-First*, *soluções ponta a ponta*
+- Slogan vazio. *construído com lógica e design*
+
+Exemplo. Recusar *O olho de design entra na tela, na API e no aplicativo.* Aceitar *Uso tipografia e hierarquia na tela, na API e no aplicativo.*
+
+Uma frase nova não autoriza o resto da página. Mude um lead, releia o arquivo.

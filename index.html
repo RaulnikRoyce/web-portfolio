@@ -6,13 +6,13 @@
     <title>Raulnik Royce | Desenvolvedor Full Stack</title>
     <meta
       name="description"
-      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com 5 anos de bagagem em design e foco em soluções ponta a ponta."
+      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com cinco anos de design."
     />
     <meta name="author" content="Raulnik Royce" />
     <meta property="og:title" content="Raulnik Royce | Desenvolvedor Full Stack" />
     <meta
       property="og:description"
-      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com 5 anos de bagagem em design e foco em soluções ponta a ponta."
+      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com cinco anos de design."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/img/og.svg" />
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/kit.js" defer></script>
   </head>
   <body>
     <div class="c-spot" aria-hidden="true"></div>
@@ -39,10 +40,9 @@
         <a class="c-logo" href="#top">Raulnik<span>.</span>Royce</a>
         <nav class="c-nav" aria-label="Principal">
           <a href="#top">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#stack">Stack</a>
           <a href="#projetos">Projetos</a>
-          <a href="#trajetoria">Trajetória</a>
+          <a href="#stack">Stack</a>
+          <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
         </nav>
         <button
@@ -63,10 +63,9 @@
       </div>
       <nav class="l-wrap c-menu" id="menu-mobile" data-menu aria-label="Mobile">
         <a href="#top">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#stack">Stack</a>
         <a href="#projetos">Projetos</a>
-        <a href="#trajetoria">Trajetória</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
         <div class="c-menu__social">
           <a href="https://www.linkedin.com/in/raulnikroyce" target="_blank" rel="noreferrer noopener">LinkedIn</a>
@@ -80,14 +79,199 @@
         <div class="l-hero__grid" aria-hidden="true"></div>
         <div class="l-wrap l-hero__inner">
           <p class="c-eyebrow">Full stack · Node.js · Vue · Flutter</p>
-          <h1 class="c-hero-title">Software para a oficina, o mapa e o evento.</h1>
+          <h1 class="c-hero-title">Construindo interfaces,<br />APIs e aplicativos.</h1>
           <p class="c-lead">
-            Graduando em Engenharia de Software. Cinco anos de design (comunicação visual e web) agora sustentam APIs,
-            apps e painéis que eu mesmo precisava na oficina, no mapa e na produção de evento.
+            Eu defino tipografia e composição enquanto implemento o front, o back e o app.
           </p>
           <div class="c-actions">
             <a class="c-btn c-btn--primary" href="#projetos">Ver projetos</a>
             <a class="c-btn c-btn--ghost" href="#contato">Vamos conversar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-section" id="projetos">
+        <div class="l-wrap">
+          <p class="c-kicker-label">Projetos</p>
+          <h2>Três projetos no ar</h2>
+          <p class="c-section-lead">A caderneta da estrada, o gestor da produção de evento e esta landing.</p>
+          <div class="l-projects">
+            <article class="c-card">
+              <p class="c-card__kicker">Caderneta do piloto</p>
+              <div class="c-shot" aria-hidden="true">
+                <div class="c-shot__grid"></div>
+                <div class="c-shot__body">
+                  <span class="c-shot__label">Screenshot em breve</span>
+                  <p class="c-shot__name">life.and.roads</p>
+                </div>
+              </div>
+              <h3>life.and.roads</h3>
+              <p class="c-card__tagline">O piloto guarda km, combustível e manutenção na viagem.</p>
+              <p class="c-card__body">
+                Ele também marca o último ponto no mapa. O dado fica no aparelho, o login é opcional e o schema .strict()
+                do Zod recusa telemetria extra.
+              </p>
+              <div class="c-meta">
+                <p>
+                  <span>A versão para as lojas ainda está em desenvolvimento.</span>
+                </p>
+              </div>
+              <ul class="c-tags">
+                <li>Flutter</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+                <li>JWT</li>
+                <li>Zod</li>
+              </ul>
+              <div class="c-links">
+                <a href="https://github.com/RaulnikRoyce/life-and-roads" target="_blank" rel="noreferrer noopener"
+                  >Repositório</a
+                >
+              </div>
+            </article>
+
+            <article class="c-card">
+              <p class="c-card__kicker">Show independente</p>
+              <div class="c-shot">
+                <img
+                  src="assets/img/beco-underground.png"
+                  alt="Tela de login do painel Beco Underground"
+                  width="1280"
+                  height="800"
+                />
+              </div>
+              <h3>Beco Underground</h3>
+              <p class="c-card__tagline">A produção concentra lineup e cachê neste sistema.</p>
+              <p class="c-card__body">
+                Esses dados ficam juntos, no jeito que o show é organizado.
+              </p>
+              <div class="c-meta">
+                <p>
+                  <span
+                    >A API usa rota, controller, service e repository. O admin organiza o palco e o produtor cadastra o
+                    evento. A demo está no ar.</span
+                  >
+                </p>
+              </div>
+              <ul class="c-tags">
+                <li>Vue 3</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+                <li>Zod</li>
+                <li>JWT</li>
+              </ul>
+              <div class="c-links">
+                <a href="https://gestaobeco.netlify.app/" target="_blank" rel="noreferrer noopener">Ver painel</a>
+                <a
+                  href="https://github.com/RaulnikRoyce/frontend-beco-underground"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Frontend</a
+                >
+                <a href="https://github.com/RaulnikRoyce/api-beco-underground" target="_blank" rel="noreferrer noopener"
+                  >API</a
+                >
+              </div>
+            </article>
+
+            <article class="c-card">
+              <p class="c-card__kicker">Landing pessoal</p>
+              <div class="c-shot">
+                <img
+                  src="assets/img/web-portfolio.png"
+                  alt="Hero do portfólio de Raulnik Royce"
+                  width="1280"
+                  height="800"
+                />
+              </div>
+              <h3>web-portfolio</h3>
+              <p class="c-card__tagline">Eu apresento o trabalho neste domínio.</p>
+              <p class="c-card__body">O Netlify publica a raiz, sem etapa de build, e o domínio aponta para cá.</p>
+              <div class="c-meta">
+                <p>
+                  <span>O repositório é público.</span>
+                </p>
+              </div>
+              <ul class="c-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="c-links">
+                <a href="https://portfolio.raulnikroyce.dev/" target="_blank" rel="noreferrer noopener">Ver site</a>
+                <a href="https://github.com/RaulnikRoyce/web-portfolio" target="_blank" rel="noreferrer noopener"
+                  >Repositório</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-section" id="stack">
+        <div class="l-wrap">
+          <p class="c-kicker-label">Ferramentas</p>
+          <h2>Stack</h2>
+          <p class="c-section-lead">O que usei no frontend, na API e no aplicativo mobile.</p>
+          <div class="l-stack-row">
+            <div class="l-stack">
+              <article class="c-stack-group">
+                <h3>Front</h3>
+                <ul class="c-chips">
+                  <li>Vue</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Back</h3>
+                <ul class="c-chips">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Zod</li>
+                  <li>JWT</li>
+                </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Mobile</h3>
+                <ul class="c-chips">
+                  <li>Flutter</li>
+                </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Dados</h3>
+                <ul class="c-chips">
+                  <li>MySQL</li>
+                </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Design</h3>
+                <ul class="c-chips">
+                  <li>UI/UX</li>
+                  <li>Tipografia</li>
+                  <li>WordPress</li>
+                </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Editor</h3>
+                <ul class="c-chips">
+                  <li>Cursor</li>
+                </ul>
+              </article>
+            </div>
+            <div class="c-toolkit" role="group" aria-label="Ferramentas em espiral. Arraste para girar.">
+              <p class="c-toolkit__title">Ferramentas</p>
+              <div class="c-kit c-kit--wide" data-kit="stack">
+                <canvas width="720" height="430" aria-hidden="true"></canvas>
+              </div>
+              <p class="c-kit__hint">Arraste</p>
+              <p class="c-kit__mark" aria-hidden="true">&lt;&gt;</p>
+            </div>
           </div>
         </div>
       </section>
@@ -108,16 +292,17 @@
             <p class="c-kicker-label">Perfil</p>
             <h2>Olá, sou Raulnik Royce</h2>
             <p class="c-prose">
-              Venho do design, com identidade visual, web e sites em HTML, CSS e WordPress. Tipografia, composição e
-              hierarquia eram o trabalho diário.
+              Passei cinco anos em identidade visual e em sites feitos com HTML, CSS, JavaScript e WordPress, e
+              tipografia, composição e hierarquia ocupavam o expediente inteiro, do briefing ao arquivo publicado,
+              enquanto eu fechava a marca e a página na mesma entrega.
             </p>
             <p class="c-prose">
-              Hoje estudo Engenharia de Software e construo o produto inteiro, da decisão de interface ao contrato da
-              API. O olho treinado em UI/UX entra na modelagem, nas permissões e no que o app recusa coletar.
+              Estudo Engenharia de Software e construo o produto da escolha da interface ao contrato da API, com a
+              prática de UI e UX definindo a modelagem, as permissões e o dado que o aplicativo recusa coletar.
             </p>
             <p class="c-prose">
-              Os projetos nascem de uso real, como a caderneta de moto sem feed e o painel de evento no lugar da
-              planilha.
+              A caderneta da moto guarda o percurso sem feed e o painel de evento tira a produção da planilha, dois
+              sistemas que eu escrevi porque precisava deles no trabalho e na estrada e que ainda uso.
             </p>
           </div>
         </div>
@@ -127,174 +312,18 @@
         <div class="l-wrap">
           <ul class="l-pillars">
             <li class="c-pillar">
-              <h3>Olho de design</h3>
-              <p>Tipografia, hierarquia e interface entram no dia a dia do código.</p>
+              <h3>Design aplicado</h3>
+              <p>Peso e ritmo da página fazem parte do que eu desenvolvo.</p>
             </li>
             <li class="c-pillar">
-              <h3>Ponta a ponta</h3>
-              <p>Da tela ao schema da API. A regra de negócio e a interface saem da mesma cabeça.</p>
+              <h3>Layout e regra</h3>
+              <p>Eu monto a regra de negócio e o layout, então os dois combinam do endpoint à UI.</p>
             </li>
             <li class="c-pillar">
-              <h3>Problema real</h3>
-              <p>Moto, oficina, mapa, lineup e cachê no software do dia a dia.</p>
+              <h3>Questões do dia a dia</h3>
+              <p>Na graduação eu desenvolvo software para o que aparece no cotidiano.</p>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="l-section" id="stack">
-        <div class="l-wrap">
-          <p class="c-kicker-label">Ferramentas</p>
-          <h2>Stack</h2>
-          <p class="c-section-lead">
-            O que uso para entregar front, API e mobile no mesmo fio, com o design no começo do trabalho.
-          </p>
-          <div class="l-stack">
-            <article class="c-stack-group">
-              <h3>Front</h3>
-              <ul class="c-chips">
-                <li>Vue</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </article>
-            <article class="c-stack-group">
-              <h3>Back</h3>
-              <ul class="c-chips">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Zod</li>
-                <li>JWT</li>
-              </ul>
-            </article>
-            <article class="c-stack-group">
-              <h3>Mobile</h3>
-              <ul class="c-chips">
-                <li>Flutter</li>
-              </ul>
-            </article>
-            <article class="c-stack-group">
-              <h3>Dados</h3>
-              <ul class="c-chips">
-                <li>MySQL</li>
-              </ul>
-            </article>
-            <article class="c-stack-group">
-              <h3>Design</h3>
-              <ul class="c-chips">
-                <li>UI/UX</li>
-                <li>Tipografia</li>
-                <li>WordPress</li>
-              </ul>
-            </article>
-            <article class="c-stack-group">
-              <h3>AI-First</h3>
-              <ul class="c-chips">
-                <li>Cursor</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="l-section" id="projetos">
-        <div class="l-wrap">
-          <p class="c-kicker-label">Trabalhos</p>
-          <h2>Projetos em uso</h2>
-          <p class="c-section-lead">Software nascido de problema real na estrada, na oficina e na produção de evento.</p>
-          <div class="l-projects">
-            <article class="c-card">
-              <p class="c-card__kicker">Mobile · privacidade · estrada</p>
-              <div class="c-shot" aria-hidden="true">
-                <div class="c-shot__grid"></div>
-                <div class="c-shot__body">
-                  <span class="c-shot__label">Screenshot em breve</span>
-                  <p class="c-shot__name">life.and.roads</p>
-                </div>
-              </div>
-              <h3>life.and.roads</h3>
-              <p class="c-card__tagline">Caderneta digital para o piloto, sem feed e sem rede social.</p>
-              <p class="c-card__body">
-                O piloto registra km, combustível, manutenções e o último ponto no mapa durante a viagem.
-              </p>
-              <div class="c-meta">
-                <p>
-                  <span
-                    ><strong>Arquitetura.</strong> Dado local no aparelho, login opcional e API com schema .strict() do
-                    Zod, que recusa telemetria extra. A privacidade entra no contrato da API.</span
-                  >
-                </p>
-                <p>
-                  <span
-                    ><strong>Próximos passos.</strong> Escala em desenvolvimento para lançamento oficial nas
-                    lojas.</span
-                  >
-                </p>
-              </div>
-              <ul class="c-tags">
-                <li>Flutter</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MySQL</li>
-                <li>JWT</li>
-                <li>Zod</li>
-              </ul>
-              <div class="c-links">
-                <a href="https://github.com/RaulnikRoyce/life-and-roads" target="_blank" rel="noreferrer noopener"
-                  >Repositório</a
-                >
-              </div>
-            </article>
-
-            <article class="c-card">
-              <p class="c-card__kicker">Painel · evento independente</p>
-              <div class="c-shot">
-                <img
-                  src="assets/img/beco-underground.png"
-                  alt="Tela de login do painel Beco Underground"
-                  width="1280"
-                  height="800"
-                />
-              </div>
-              <h3>Beco Underground</h3>
-              <p class="c-card__tagline">Produção independente no caos, com um painel no lugar de dez planilhas.</p>
-              <p class="c-card__body">
-                Lineup, artistas, cachês e permissões numa interface só, no fluxo que a produção pedia e o papel deixava
-                solto.
-              </p>
-              <div class="c-meta">
-                <p>
-                  <span
-                    ><strong>Arquitetura.</strong> Rota, controller, service e repository. Admin escala o palco e o
-                    produtor cria evento. Demo no ar.</span
-                  >
-                </p>
-              </div>
-              <ul class="c-tags">
-                <li>Vue 3</li>
-                <li>Pinia</li>
-                <li>Tailwind</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MySQL</li>
-                <li>Zod</li>
-                <li>JWT</li>
-              </ul>
-              <div class="c-links">
-                <a href="https://gestaobeco.netlify.app/" target="_blank" rel="noreferrer noopener">Ver painel</a>
-                <a
-                  href="https://github.com/RaulnikRoyce/frontend-beco-underground"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Frontend</a
-                >
-                <a href="https://github.com/RaulnikRoyce/api-beco-underground" target="_blank" rel="noreferrer noopener"
-                  >API</a
-                >
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -302,7 +331,7 @@
         <div class="l-wrap">
           <p class="c-kicker-label">Histórico</p>
           <h2>Trajetória</h2>
-          <p class="c-section-lead">Do estúdio de comunicação visual à engenharia, com o mesmo critério visual.</p>
+          <p class="c-section-lead">Do estúdio à graduação, e o design segue no que eu faço.</p>
           <ol class="c-path">
             <li>
               <span class="c-path__index">01</span>
@@ -310,9 +339,8 @@
                 <p class="c-period">2019 a 2024</p>
                 <h3>Design e comunicação visual</h3>
                 <p>
-                  Cinco anos entregando identidade, web design e sites em HTML, CSS e WordPress. Tipografia e hierarquia
-                  como ofício. Essa base ainda decide como a interface e o fluxo se comportam nos sistemas que escrevo
-                  hoje.
+                  Entreguei marcas e sites. Letra e ordem da página eram o ofício e ainda uso as duas na página e nos
+                  sistemas.
                 </p>
               </div>
             </li>
@@ -322,20 +350,18 @@
                 <p class="c-period">2024 até hoje</p>
                 <h3>Engenharia de Software</h3>
                 <p>
-                  Graduação em andamento. O foco passou a ser API, dados e mobile (Node, Vue, Flutter, MySQL), sem
-                  largar o critério visual. life.and.roads e Beco Underground saíram desse cruzamento, como produto em
-                  uso.
+                  A graduação está em andamento. Passei a focar em API, dados e mobile com Node, Vue, Flutter e MySQL, e
+                  isso ainda aparece no que eu programo. life.and.roads, Beco Underground e esta landing já rodam.
                 </p>
               </div>
             </li>
             <li>
               <span class="c-path__index">03</span>
               <div>
-                <p class="c-period">Resultado</p>
-                <h3>Solução ponta a ponta</h3>
+                <p class="c-period">Hoje</p>
+                <h3>UI e schema</h3>
                 <p>
-                  Entrego da tela ao schema. A interface faz sentido porque a regra foi escrita pela mesma pessoa.
-                  Aberto a trabalho e colaboração nesse formato, da decisão de produto ao deploy.
+                  Eu cubro a UI e o schema e escrevo a lógica do produto. Aceito vaga e parceria, do produto ao deploy.
                 </p>
               </div>
             </li>
@@ -348,8 +374,7 @@
           <p class="c-kicker-label">Contato</p>
           <h2>Vamos conversar</h2>
           <p class="c-section-lead">
-            Aberto a trabalho, colaboração e conversa sobre produto, da interface à API. LinkedIn, GitHub, e-mail ou
-            PDF.
+            Estou disponível para trabalho e parceria. LinkedIn, GitHub, e-mail e o PDF do currículo estão abaixo.
           </p>
           <ul class="l-contact">
             <li>
@@ -389,11 +414,12 @@
     <footer class="l-footer">
       <div class="l-wrap l-footer__inner">
         <nav class="c-foot-nav" aria-label="Rodapé">
-          <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
+          <a href="#stack">Stack</a>
+          <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
         </nav>
-        <p class="c-copy">Construído com lógica e design por Raulnik Royce.</p>
+        <p class="c-copy">Feito por Raulnik Royce.</p>
       </div>
     </footer>
   </body>

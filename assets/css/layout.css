@@ -73,6 +73,11 @@
 .l-stack {
   display: grid;
   gap: 1rem;
+}
+
+.l-stack-row {
+  display: grid;
+  gap: 2rem;
   margin-top: 2.5rem;
 }
 
@@ -129,12 +134,18 @@
     gap: 4rem;
   }
 
-  .l-stack {
-    grid-template-columns: repeat(3, 1fr);
+  .l-stack-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+
+  .l-stack-row .l-stack {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .l-projects {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
