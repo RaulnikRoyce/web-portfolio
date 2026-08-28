@@ -9,6 +9,7 @@
       "vue",
       "html",
       "css",
+      "unocss",
       "javascript",
       "nodejs",
       "express",
@@ -17,7 +18,8 @@
       "flutter",
       "mysql",
       "wordpress",
-      "cursor"
+      "cursor",
+      "unocss"
     ]
   };
 
