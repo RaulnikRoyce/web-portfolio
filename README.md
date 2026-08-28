@@ -1,8 +1,8 @@
 # Raulnik Royce
 
-Landing de apresentação profissional: HTML5, CSS e JavaScript.
+Landing de apresentação profissional em HTML5, CSS e JavaScript.
 
-**Site:** [portfolio.raulnikroyce.dev](https://portfolio.raulnikroyce.dev/)
+O site está em [portfolio.raulnikroyce.dev](https://portfolio.raulnikroyce.dev/).
 
 ## Desenvolvimento
 
