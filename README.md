@@ -18,4 +18,4 @@ Ou abra `index.html` no navegador.
 
 ## Deploy
 
-Netlify publica a raiz (`publish = "."` no `netlify.toml`), sem build. O domínio aponta para esse projeto.
+O Vercel publica a raiz, sem etapa de build. O `vercel.json` fica na raiz e o domínio aponta para esse projeto.
