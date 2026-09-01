@@ -246,6 +246,25 @@
   font-weight: 500;
 }
 
+.c-tech-layers {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.c-tech-layer__title {
+  font-size: 0.7rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.c-tech-layer .c-tags,
+.c-tech-layer .c-chips {
+  margin-top: 0.5rem;
+}
+
 .c-card__kicker {
   font-family: var(--font-display);
   font-size: 0.7rem;
