@@ -20,8 +20,7 @@
       "dart",
       "mysql",
       "wordpress",
-      "cursor",
-      "unocss"
+      "cursor"
     ]
   };
 
