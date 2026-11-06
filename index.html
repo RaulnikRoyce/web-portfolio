@@ -101,8 +101,8 @@
       <section class="l-section" id="projetos">
         <div class="l-wrap">
           <p class="c-kicker-label">Projetos</p>
-          <h2>Três projetos no ar</h2>
-          <p class="c-section-lead">Uma caderneta de moto, um sistema de eventos com loja de ingressos e este portfólio.</p>
+          <h2>Projetos selecionados</h2>
+          <p class="c-section-lead">Uma caderneta de moto, um sistema de eventos com loja de ingressos e um desafio técnico backend.</p>
           <div class="l-projects">
             <article class="c-card">
               <p class="c-card__kicker">Caderneta do piloto</p>
@@ -250,37 +250,42 @@
             </article>
 
             <article class="c-card">
-              <p class="c-card__kicker">Landing pessoal</p>
+              <p class="c-card__kicker">Desafio técnico backend</p>
               <div class="c-shot">
-                <img
-                  src="assets/img/web-portfolio.png"
-                  alt="Hero do portfólio de Raulnik Royce"
-                  width="1280"
-                  height="800"
-                />
+                <div class="c-shot__grid" aria-hidden="true"></div>
+                <div class="c-shot__body">
+                  <span class="c-shot__label">HTTP e fila SQS</span>
+                  <p class="c-shot__name">Transações de apostas</p>
+                  <p>Validação → saldo e histórico → evento</p>
+                </div>
               </div>
-              <h3>web-portfolio</h3>
-              <p class="c-card__tagline">Interface responsiva para apresentar meus projetos e minha trajetória.</p>
-              <p class="c-card__body">Implementei a página com HTML semântico, CSS e JavaScript, incluindo navegação mobile e uma espiral interativa de tecnologias.</p>
+              <h3>Jungle Backend Challenge</h3>
+              <p class="c-card__tagline">Processador de transações de apostas com controle de saldo e histórico.</p>
+              <p class="c-card__body">
+                Implementei a API e os workers, com prevenção de operações duplicadas, controle de
+                concorrência por carteira e publicação de eventos com recuperação após falhas.
+              </p>
               <div class="c-meta">
-                <p>
-                  <span>Publicado no Vercel, com código público e sem etapa de build.</span>
-                </p>
+                <p><span>Entregue em processo seletivo, com execução local via Docker e 67 testes aprovados
+                  em clone novo. Autenticação e decisões sobre estornos estão documentadas.</span></p>
               </div>
               <div class="c-tech-layers">
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Linguagens</h4>
-                  <ul class="c-tags">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <h4 class="c-tech-layer__title">Linguagem</h4>
+                  <ul class="c-tags"><li>TypeScript</li></ul>
+                </div>
+                <div class="c-tech-layer">
+                  <h4 class="c-tech-layer__title">Backend</h4>
+                  <ul class="c-tags"><li>NestJS</li><li>Bun</li><li>MikroORM</li></ul>
+                </div>
+                <div class="c-tech-layer">
+                  <h4 class="c-tech-layer__title">Dados e ferramentas</h4>
+                  <ul class="c-tags"><li>PostgreSQL</li><li>SQS</li><li>LocalStack</li><li>Docker</li></ul>
                 </div>
               </div>
               <div class="c-links">
-                <a href="https://github.com/RaulnikRoyce/web-portfolio" target="_blank" rel="noreferrer noopener"
-                  >Repositório</a
-                >
+                <a href="https://github.com/RaulnikRoyce/jungle-backend-challenge" target="_blank" rel="noreferrer noopener">Repositório</a>
+                <a href="https://github.com/RaulnikRoyce/jungle-backend-challenge/blob/main/ARCHITECTURE.md" target="_blank" rel="noreferrer noopener">Decisões técnicas</a>
               </div>
             </article>
           </div>
@@ -319,6 +324,9 @@
                 <h3>Backend</h3>
                 <ul class="c-chips">
                   <li>Node.js</li>
+                  <li>NestJS</li>
+                  <li>Bun</li>
+                  <li>MikroORM</li>
                   <li>Express</li>
                   <li>Zod</li>
                   <li>JWT</li>
@@ -334,7 +342,7 @@
               </article>
               <article class="c-stack-group">
                 <h3>Dados</h3>
-                <ul class="c-chips"><li>MySQL</li><li>SQLite</li></ul>
+                <ul class="c-chips"><li>MySQL</li><li>SQLite</li><li>PostgreSQL</li></ul>
               </article>
               <article class="c-stack-group">
                 <h3>Design</h3>
@@ -348,6 +356,9 @@
                 <h3>Ferramentas</h3>
                 <ul class="c-chips">
                   <li>Cursor</li>
+                  <li>Docker</li>
+                  <li>SQS</li>
+                  <li>LocalStack</li>
                 </ul>
               </article>
             </div>

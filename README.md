@@ -6,9 +6,11 @@ Página pessoal para apresentar projetos, experiência em design e trajetória e
 
 ## Conteúdo
 
-A página apresenta life.and.roads, Beco Underground (painel, loja e API) e o próprio portfólio. Depois dos projetos, reúne tecnologias, perfil, trajetória e contato. Os vídeos são demonstrações e podem mostrar versões anteriores dos produtos.
+A página apresenta life.and.roads, Beco Underground (painel, loja e API) e Jungle Backend Challenge, desenvolvido para um processo seletivo. Depois dos projetos, reúne tecnologias, perfil, trajetória e contato. Os vídeos são demonstrações e podem mostrar versões anteriores dos produtos.
 
 O life.and.roads está em beta aberto 1.5.3, com links para o app web e o APK Android mais recente. O currículo em PDF pode ser baixado no início da página e na seção de contato.
+
+O Jungle processa transações de apostas com NestJS, PostgreSQL e SQS via LocalStack. O card apresenta a execução local com Docker, os 67 testes aprovados na verificação da entrega e os links do repositório e das decisões técnicas.
 
 ## Implementação
 
