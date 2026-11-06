@@ -10,6 +10,13 @@
   }
 
   if (toggle && menu) {
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
     toggle.addEventListener("click", function () {
       setOpen(!menu.classList.contains("is-open"));
     });

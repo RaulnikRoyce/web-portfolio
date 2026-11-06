@@ -6,17 +6,25 @@
     <title>Raulnik Royce | Desenvolvedor Full Stack</title>
     <meta
       name="description"
-      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com cinco anos de design."
+      content="Projetos de Raulnik Royce com interfaces, APIs e aplicativos em Node.js, Vue e Flutter, com experiência em design gráfico e webdesign."
     />
     <meta name="author" content="Raulnik Royce" />
     <meta property="og:title" content="Raulnik Royce | Desenvolvedor Full Stack" />
     <meta
       property="og:description"
-      content="Portfólio de Raulnik Royce, desenvolvedor full stack em Node.js, Vue e Flutter, com cinco anos de design."
+      content="Projetos de Raulnik Royce com interfaces, APIs e aplicativos em Node.js, Vue e Flutter, com experiência em design gráfico e webdesign."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/og.svg" />
+    <link rel="canonical" href="https://portfolio.raulnikroyce.dev/" />
+    <meta property="og:url" content="https://portfolio.raulnikroyce.dev/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="https://portfolio.raulnikroyce.dev/assets/img/web-portfolio.png" />
+    <meta property="og:image:alt" content="Página do portfólio de Raulnik Royce" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raulnik Royce | Desenvolvedor Full Stack" />
+    <meta name="twitter:description" content="Projetos de Raulnik Royce com interfaces, APIs e aplicativos em Node.js, Vue e Flutter, com experiência em design gráfico e webdesign." />
+    <meta name="twitter:image" content="https://portfolio.raulnikroyce.dev/assets/img/web-portfolio.png" />
+    <meta name="twitter:image:alt" content="Página do portfólio de Raulnik Royce" />
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -85,7 +93,7 @@
           </p>
           <div class="c-actions">
             <a class="c-btn c-btn--primary" href="#projetos">Ver projetos</a>
-            <a class="c-btn c-btn--ghost" href="#contato">Vamos conversar</a>
+            <a class="c-btn c-btn--ghost" href="assets/docs/curriculo.pdf" download="curriculo-raulnik-royce.pdf">Baixar currículo</a>
           </div>
         </div>
       </section>
@@ -94,7 +102,7 @@
         <div class="l-wrap">
           <p class="c-kicker-label">Projetos</p>
           <h2>Três projetos no ar</h2>
-          <p class="c-section-lead">A caderneta da estrada, o painel do show com loja de ingressos e esta landing.</p>
+          <p class="c-section-lead">Uma caderneta de moto, um sistema de eventos com loja de ingressos e este portfólio.</p>
           <div class="l-projects">
             <article class="c-card">
               <p class="c-card__kicker">Caderneta do piloto</p>
@@ -109,31 +117,29 @@
                   referrerpolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </div>
+              <p class="c-demo-note">Demonstração do aplicativo. O vídeo pode mostrar uma versão anterior.</p>
               <h3>life.and.roads</h3>
-              <p class="c-card__tagline">O piloto guarda km, combustível e manutenção na viagem.</p>
+              <p class="c-card__tagline">Caderneta de moto com manutenção, abastecimentos e viagens.</p>
               <p class="c-card__body">
-                Ele também marca o último ponto no mapa. O dado fica no aparelho, o login é opcional e o schema .strict()
-                do Zod recusa telemetria extra.
+                Desenvolvi o app e a API, com dados locais no Android, cálculos de consumo e sincronização
+                opcional com a conta. O histórico pode ser corrigido sem perder os registros seguintes.
               </p>
               <div class="c-meta">
                 <p>
-                  <span
-                    >Beta v1.2.0 (build 5) em testes fechados com pilotos no APK Android. A publicação na loja ainda
-                    não saiu.</span
-                  >
+                  <span>Beta aberto 1.5.3, com APK Android e app web publicados. O Android funciona offline;
+                    a versão web precisa de internet para abrir.</span>
                 </p>
               </div>
               <div class="c-tech-layers">
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Linguagens base</h4>
+                  <h4 class="c-tech-layer__title">Linguagens</h4>
                   <ul class="c-tags">
                     <li>Dart</li>
                     <li>TypeScript</li>
-                    <li>MySQL</li>
                   </ul>
                 </div>
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Ecossistema mobile (app)</h4>
+                  <h4 class="c-tech-layer__title">App</h4>
                   <ul class="c-tags">
                     <li>Flutter</li>
                     <li>Riverpod</li>
@@ -141,7 +147,7 @@
                   </ul>
                 </div>
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Ecossistema back-end (API)</h4>
+                  <h4 class="c-tech-layer__title">Backend</h4>
                   <ul class="c-tags">
                     <li>Node.js</li>
                     <li>Express</li>
@@ -150,7 +156,13 @@
                   </ul>
                 </div>
               </div>
+              <div class="c-tech-layer c-card__data">
+                <h4 class="c-tech-layer__title">Dados</h4>
+                <ul class="c-tags"><li>SQLite</li><li>MySQL</li></ul>
+              </div>
               <div class="c-links">
+                <a href="https://app.raulnikroyce.dev/" target="_blank" rel="noreferrer noopener">Abrir app</a>
+                <a href="https://github.com/RaulnikRoyce/life-and-roads/releases/latest/download/life-and-roads-beta-aberto.apk" target="_blank" rel="noreferrer noopener">Baixar APK</a>
                 <a href="https://github.com/RaulnikRoyce/life-and-roads" target="_blank" rel="noreferrer noopener"
                   >Repositório</a
                 >
@@ -170,30 +182,27 @@
                   referrerpolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </div>
+              <p class="c-demo-note">Demonstração do painel. O vídeo pode mostrar uma versão anterior.</p>
               <h3>Beco Underground</h3>
-              <p class="c-card__tagline">A produção concentra lineup, cachê e venda de ingressos neste sistema.</p>
+              <p class="c-card__tagline">Gestão de eventos, artistas e ingressos para a produção de shows.</p>
               <p class="c-card__body">
-                O produtor cadastra o evento e publica lotes no painel, e a loja lista os shows abertos para venda.
+                Desenvolvi o painel, a loja e a API, organizando eventos, lotes e permissões por usuário. O produtor acompanha seus eventos, e a loja apresenta os shows abertos para venda.
               </p>
               <div class="c-meta">
                 <p>
-                  <span
-                    >Painel e loja no ar. A API usa rota, controller, service e repository, com rotas públicas de
-                    listagem e pedido.</span
-                  >
+                  <span>Painel e loja publicados, com acesso público à demonstração e código nos três repositórios.</span>
                 </p>
               </div>
               <div class="c-tech-layers">
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Linguagens base</h4>
+                  <h4 class="c-tech-layer__title">Linguagens</h4>
                   <ul class="c-tags">
                     <li>JavaScript</li>
                     <li>CSS</li>
-                    <li>MySQL</li>
                   </ul>
                 </div>
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Ecossistema front-end (painel e loja)</h4>
+                  <h4 class="c-tech-layer__title">Frontend</h4>
                   <ul class="c-tags">
                     <li>Vue 3</li>
                     <li>Pinia</li>
@@ -204,7 +213,7 @@
                   </ul>
                 </div>
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Ecossistema back-end (API)</h4>
+                  <h4 class="c-tech-layer__title">Backend</h4>
                   <ul class="c-tags">
                     <li>Node.js</li>
                     <li>Express</li>
@@ -212,6 +221,10 @@
                     <li>JWT</li>
                   </ul>
                 </div>
+              </div>
+              <div class="c-tech-layer c-card__data">
+                <h4 class="c-tech-layer__title">Dados</h4>
+                <ul class="c-tags"><li>MySQL</li></ul>
               </div>
               <div class="c-links">
                 <a href="https://demo.raulnikroyce.dev/" target="_blank" rel="noreferrer noopener">Ver painel</a>
@@ -247,16 +260,16 @@
                 />
               </div>
               <h3>web-portfolio</h3>
-              <p class="c-card__tagline">Eu apresento o trabalho neste domínio.</p>
-              <p class="c-card__body">O Vercel publica a raiz, sem etapa de build, e o domínio aponta para cá.</p>
+              <p class="c-card__tagline">Interface responsiva para apresentar meus projetos e minha trajetória.</p>
+              <p class="c-card__body">Implementei a página com HTML semântico, CSS e JavaScript, incluindo navegação mobile e uma espiral interativa de tecnologias.</p>
               <div class="c-meta">
                 <p>
-                  <span>O repositório é público.</span>
+                  <span>Publicado no Vercel, com código público e sem etapa de build.</span>
                 </p>
               </div>
               <div class="c-tech-layers">
                 <div class="c-tech-layer">
-                  <h4 class="c-tech-layer__title">Linguagens base</h4>
+                  <h4 class="c-tech-layer__title">Linguagens</h4>
                   <ul class="c-tags">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -282,18 +295,17 @@
           <div class="l-stack-row">
             <div class="l-stack">
               <article class="c-stack-group">
-                <h3>Linguagens base</h3>
+                <h3>Linguagens</h3>
                 <ul class="c-chips">
                   <li>JavaScript</li>
                   <li>CSS</li>
                   <li>HTML</li>
                   <li>TypeScript</li>
                   <li>Dart</li>
-                  <li>MySQL</li>
                 </ul>
               </article>
               <article class="c-stack-group">
-                <h3>Ecossistema front-end</h3>
+                <h3>Frontend</h3>
                 <ul class="c-chips">
                   <li>Vue 3</li>
                   <li>Pinia</li>
@@ -304,7 +316,7 @@
                 </ul>
               </article>
               <article class="c-stack-group">
-                <h3>Ecossistema back-end</h3>
+                <h3>Backend</h3>
                 <ul class="c-chips">
                   <li>Node.js</li>
                   <li>Express</li>
@@ -313,12 +325,16 @@
                 </ul>
               </article>
               <article class="c-stack-group">
-                <h3>Ecossistema mobile</h3>
+                <h3>Mobile</h3>
                 <ul class="c-chips">
                   <li>Flutter</li>
                   <li>Riverpod</li>
                   <li>Drift</li>
                 </ul>
+              </article>
+              <article class="c-stack-group">
+                <h3>Dados</h3>
+                <ul class="c-chips"><li>MySQL</li><li>SQLite</li></ul>
               </article>
               <article class="c-stack-group">
                 <h3>Design</h3>
@@ -329,18 +345,18 @@
                 </ul>
               </article>
               <article class="c-stack-group">
-                <h3>Editor</h3>
+                <h3>Ferramentas</h3>
                 <ul class="c-chips">
                   <li>Cursor</li>
                 </ul>
               </article>
             </div>
-            <div class="c-toolkit" role="group" aria-label="Ferramentas em espiral. Arraste para girar.">
+            <div class="c-toolkit" role="group" aria-label="Ferramentas em espiral" aria-describedby="espiral-ajuda">
               <p class="c-toolkit__title">Ferramentas</p>
+              <p class="c-kit__hint" id="espiral-ajuda">Interaja com as logos para girar a espiral</p>
               <div class="c-kit c-kit--wide" data-kit="stack">
                 <canvas width="720" height="430" aria-hidden="true"></canvas>
               </div>
-              <p class="c-kit__hint">Arraste</p>
               <p class="c-kit__mark" aria-hidden="true">&lt;&gt;</p>
             </div>
           </div>
@@ -363,18 +379,17 @@
             <p class="c-kicker-label">Perfil</p>
             <h2>Olá, sou Raulnik Royce</h2>
             <p class="c-prose">
-              Passei cinco anos em design gráfico para comunicação visual, de agosto de 2018 a agosto de 2023, fechando
-              identidade, material impresso e peça para negócio local, com tipografia e composição no expediente, do
-              briefing ao arquivo publicado.
+              Trabalhei com design gráfico para comunicação visual entre agosto de 2018 e agosto de 2023,
+              criando identidades visuais, materiais impressos e peças para negócios locais, do briefing à entrega.
             </p>
             <p class="c-prose">
-              Desde agosto de 2023 eu faço webdesign, sites e layouts responsivos com HTML, CSS, JavaScript e WordPress,
-              do arquivo à publicação, e estudo Engenharia de Software, da UI ao contrato da API, com a prática de
-              usabilidade na modelagem, nas permissões e no dado que o aplicativo recusa coletar.
+              Desde agosto de 2023 atuo com webdesign, sites e layouts responsivos usando HTML, CSS, JavaScript
+              e WordPress. Na graduação em Engenharia de Software, amplio esse trabalho com aplicações,
+              APIs e bancos de dados, considerando a usabilidade e as regras de cada projeto.
             </p>
             <p class="c-prose">
-              A caderneta da moto guarda o percurso sem feed e o painel de evento tira a produção da planilha, dois
-              sistemas que eu escrevi porque precisava deles no trabalho e na estrada e que ainda uso.
+              Desenvolvo a caderneta da moto e o sistema de eventos a partir de necessidades que encontro
+              no trabalho e na estrada, acompanhando o uso para corrigir problemas e melhorar as próximas versões.
             </p>
           </div>
         </div>
@@ -403,7 +418,7 @@
         <div class="l-wrap">
           <p class="c-kicker-label">Histórico</p>
           <h2>Trajetória</h2>
-          <p class="c-section-lead">Do estúdio à graduação, com design no que eu faço.</p>
+          <p class="c-section-lead">Comunicação visual, webdesign e desenvolvimento de software.</p>
           <ol class="c-path">
             <li>
               <span class="c-path__index">01</span>
@@ -411,8 +426,8 @@
                 <p class="c-period">2018 a 2023</p>
                 <h3>Design e comunicação visual</h3>
                 <p>
-                  Entreguei identidade e material impresso para o comércio da cidade, com letra e ordem visual como
-                  ofício.
+                  Criei identidades visuais e materiais impressos para negócios locais, trabalhando com
+                  tipografia, composição e preparação de arquivos.
                 </p>
               </div>
             </li>
@@ -422,8 +437,8 @@
                 <p class="c-period">2023 até hoje</p>
                 <h3>Webdesign e graduação</h3>
                 <p>
-                  Passei a atuar em webdesign e iniciei a graduação em Engenharia de Software, com Node, Vue, Flutter e
-                  MySQL no que eu programo. life.and.roads, Beco Underground e esta landing já rodam.
+                  Passei a atuar em webdesign e iniciei a graduação em Engenharia de Software, ampliando
+                  minha experiência com interfaces, APIs e persistência de dados.
                 </p>
               </div>
             </li>
@@ -433,8 +448,8 @@
                 <p class="c-period">Hoje</p>
                 <h3>Webdesign e Engenharia</h3>
                 <p>
-                  Continuo no webdesign, avanço na Engenharia de Software, construo projetos para o cotidiano e aceito
-                  vaga e parceria.
+                  Continuo atuando com webdesign e desenvolvendo projetos durante a graduação, com interesse
+                  em uma oportunidade full stack júnior e em parcerias.
                 </p>
               </div>
             </li>

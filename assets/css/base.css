@@ -95,3 +95,9 @@ main,
   height: 1rem;
   flex-shrink: 0;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

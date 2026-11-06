@@ -612,15 +612,25 @@
 }
 
 .c-kit__hint {
-  display: none;
+  display: block;
   margin: 0.15rem 0 0;
   pointer-events: none;
   text-align: center;
   font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   color: color-mix(in oklab, var(--foreground) 70%, transparent);
+}
+
+.c-demo-note {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.c-card__data {
+  margin-top: 1rem;
 }
 
 .c-kit__mark {
@@ -643,7 +653,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .c-kit__hint,
   .c-kit__mark {
     display: none;
   }
@@ -842,6 +851,10 @@
 }
 
 @media (min-width: 40rem) {
+  .c-menu.is-open {
+    display: none;
+  }
+
   .c-path li {
     grid-template-columns: 3.5rem 1fr;
     gap: 1.25rem 1.75rem;
