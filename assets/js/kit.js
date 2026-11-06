@@ -33,7 +33,9 @@
       img.onload = function () {
         resolve(img);
       };
-      img.onerror = reject;
+      img.onerror = function () {
+        resolve(null);
+      };
       img.src = BASE + name + ".png";
     });
     return cache[name];
@@ -107,7 +109,7 @@
     var canvas = root.querySelector("canvas");
     if (!names || !canvas) return;
 
-    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
     var ctx = canvas.getContext("2d", { alpha: true });
     var images = [];
     var angle = 0;
@@ -129,6 +131,11 @@
     function loop(now) {
       raf = 0;
       if (!visible || !images.length) return;
+      if (motionPreference.matches) {
+        vel = 0;
+        lastFrame = null;
+        return;
+      }
       metrics = fitCanvas(canvas);
       if (metrics.w) {
         if (lastFrame == null) lastFrame = now;
@@ -140,7 +147,7 @@
             vel *= Math.pow(DECAY, 60 * dt);
           } else {
             vel = 0;
-            if (!reduceMotion) angle -= IDLE * dt;
+            if (!motionPreference.matches) angle -= IDLE * dt;
           }
         }
         paint(ctx, images, angle, metrics.w, metrics.h, metrics.dpr);
@@ -149,13 +156,18 @@
     }
 
     function startLoop() {
-      if (raf || !images.length) return;
+      if (raf || !visible || !images.length || motionPreference.matches) return;
       lastFrame = null;
       raf = requestAnimationFrame(loop);
     }
 
+    motionPreference.addEventListener("change", function () {
+      if (motionPreference.matches) vel = 0;
+      else startLoop();
+    });
+
     Promise.all(names.map(load)).then(function (imgs) {
-      images = imgs;
+      images = imgs.filter(Boolean);
       draw();
       if (visible) startLoop();
     });
@@ -170,7 +182,10 @@
       new IntersectionObserver(
         function (entries) {
           visible = entries[0] && entries[0].isIntersecting;
-          if (visible) startLoop();
+          if (visible) {
+            draw();
+            startLoop();
+          }
         },
         { threshold: 0 }
       ).observe(root);
@@ -194,10 +209,12 @@
       vel = ((DRAG * dx) / elapsed) * 1000;
       lastX = event.clientX;
       lastT = now;
+      draw();
     });
 
     function release(event) {
       dragging = false;
+      if (motionPreference.matches || event.type === "pointercancel") vel = 0;
       try {
         canvas.releasePointerCapture(event.pointerId);
       } catch (err) {
@@ -213,6 +230,7 @@
       function (event) {
         if (!images.length) return;
         angle += WHEEL * (event.deltaX || event.deltaY);
+        draw();
       },
       { passive: true }
     );

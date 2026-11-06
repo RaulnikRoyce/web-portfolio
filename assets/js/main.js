@@ -67,12 +67,14 @@
     window.addEventListener(
       "pointermove",
       function (event) {
+        if (!canFollow()) return;
         nextX = (event.clientX / window.innerWidth) * 100;
         nextY = (event.clientY / window.innerHeight) * 100;
         if (pending) return;
         pending = true;
         requestAnimationFrame(function () {
           pending = false;
+          if (!canFollow()) return;
           setSpot(nextX, nextY);
         });
       },

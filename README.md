@@ -44,6 +44,14 @@ O servidor padrão do Python não aplica os cabeçalhos do Vercel nem substitui 
 
 Confira as larguras de 360, 390, 768 e 1440 pixels, os vídeos, a espiral, o menu mobile e a navegação por teclado. Verifique os links dos projetos, o download do currículo, o foco visível e a preferência por movimento reduzido.
 
+Os testes de interação usam apenas os módulos nativos do Node.js. Na raiz do repositório, execute:
+
+```bash
+node --test tests/motion.test.mjs
+```
+
+A suíte verifica movimento reduzido, inércia, arrasto, rolagem, redimensionamento, visibilidade, falha no carregamento de uma logo e fechamento do menu com Escape. Node.js é necessário somente para os testes; a página continua sem instalação de dependências ou build.
+
 ## Publicação
 
 O Vercel publica a raiz do repositório sem build. A configuração em `vercel.json` define os cabeçalhos de segurança, incluindo as permissões para os vídeos incorporados do YouTube.
