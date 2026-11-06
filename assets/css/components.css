@@ -879,3 +879,20 @@
     max-width: none;
   }
 }
+
+.c-case-status {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--primary);
+  background: var(--card);
+}
+
+.c-case-status strong {
+  color: var(--primary);
+}
+
+.c-case-status p + p {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}

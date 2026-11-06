@@ -154,3 +154,15 @@
     background-position: 0 0;
   }
 }
+
+.l-case-results {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 64rem) {
+  .l-case-results {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
